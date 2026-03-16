@@ -1,0 +1,793 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== HEADER ===== */
+.on_main {
+    background: linear-gradient(135deg, #3a4a5c, #2c3e50, #4a5568);
+    text-align: center;
+    padding: 60px 20px 50px;
+}
+
+.main {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.belowheader {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #dde3ea;
+    margin-top: 16px;
+    letter-spacing: 1px;
+}
+
+/* ===== SECTION TITLE ===== */
+.what {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a2340;
+    margin: 40px 0 24px;
+    background-color: #f0f2f5;
+}
+
+/* ===== CARDS GRID ===== */
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 0 48px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #f0f2f5;
+}
+
+/* ===== INDIVIDUAL CARDS ===== */
+.clo, .stat, .jewel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.clo p, .stat p, .jewel p {
+    position: static;
+    color: #1a2340;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    text-shadow: none;
+    text-align: center;
+    width: 100%;
+}
+
+.clo img, .stat img, .jewel img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    border: none;
+    opacity: 1;
+    display: block;
+    position: static;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== BUTTON WRAPPERS ===== */
+.clothes, .stationary, .jewellery {
+    position: static;
+    transform: none;
+    width: 100%;
+}
+
+/* ===== SHOW MORE BUTTONS ===== */
+.clothes button, .stationary button, .jewellery button {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #ffffff;
+    color: #1a2340;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease;
+}
+
+.clothes button:hover, .stationary button:hover, .jewellery button:hover {
+    background-color: #ececec;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: linear-gradient(135deg, #3a4a5c, #2c3e50, #4a5568);
+    color: #dde3ea;
+    text-align: center;
+    padding: 40px 48px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+footer p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #dde3ea;
+}
+
+/* ===== STATIONARY PAGE ===== */
+
+.para {
+    background: linear-gradient(135deg, #3a4a5c, #2c3e50, #4a5568);
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 50px 20px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding: 40px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.statitem1, .statitem2, .statitem3,
+.statitem4, .statitem5 {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.statitem1 img, .statitem2 img, .statitem3 img,
+.statitem4 img, .statitem5 img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.statitem1 p:nth-child(2), .statitem2 p:nth-child(2),
+.statitem3 p:nth-child(2), .statitem4 p:nth-child(2),
+.statitem5 p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    padding: 20px 20px 0;
+}
+
+.statitem1 p:nth-child(3), .statitem2 p:nth-child(3),
+.statitem3 p:nth-child(3), .statitem4 p:nth-child(3),
+.statitem5 p:nth-child(3) {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a2340;
+    padding: 8px 20px 0;
+}
+
+.statitem1 p:nth-child(4), .statitem2 p:nth-child(4),
+.statitem3 p:nth-child(4), .statitem4 p:nth-child(4),
+.statitem5 p:nth-child(4) {
+    font-size: 0.85rem;
+    color: #888;
+    padding: 6px 20px 16px;
+}
+
+/* ===== JEWELLERY PAGE ===== */
+
+.wear {
+    background: linear-gradient(135deg, #3a4a5c, #2c3e50, #4a5568);
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 50px 20px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.jewel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding: 40px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.jewelitem1, .jewelitem2, .jewelitem3,
+.jewelitem4, .jewelitem5 {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.jewelitem1 img, .jewelitem2 img, .jewelitem3 img,
+.jewelitem4 img, .jewelitem5 img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.jewelitem1 p:nth-child(2), .jewelitem2 p:nth-child(2),
+.jewelitem3 p:nth-child(2), .jewelitem4 p:nth-child(2),
+.jewelitem5 p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    padding: 20px 20px 0;
+}
+
+.jewelitem1 p:nth-child(3), .jewelitem2 p:nth-child(3),
+.jewelitem3 p:nth-child(3), .jewelitem4 p:nth-child(3),
+.jewelitem5 p:nth-child(3) {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a2340;
+    padding: 8px 20px 0;
+}
+
+.jewelitem1 p:nth-child(4), .jewelitem2 p:nth-child(4),
+.jewelitem3 p:nth-child(4), .jewelitem4 p:nth-child(4),
+.jewelitem5 p:nth-child(4) {
+    font-size: 0.85rem;
+    color: #888;
+    padding: 6px 20px 16px;
+}
+
+/* ===== ADD TO CART BUTTON ===== */
+.cart {
+    width: calc(100% - 40px);
+    margin: 0 20px 12px;
+    padding: 14px 0;
+    background-color: #1a2340;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.cart:hover {
+    opacity: 0.85;
+}
+
+/* ===== REMOVE BUTTON ===== */
+.remove {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    padding: 14px 0;
+    background-color: #ffffff;
+    color: #1a2340;
+    border: 2px solid #1a2340;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-transform: capitalize;
+}
+
+.remove:hover {
+    background-color: #f0f2f5;
+}
+
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+ 
+/* ===== HEADER ===== */
+.on_main {
+    background: linear-gradient(135deg, #3a4a5c, #2c3e50, #4a5568);
+    text-align: center;
+    padding: 60px 20px 50px;
+}
+ 
+.main {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+ 
+.belowheader {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #dde3ea;
+    margin-top: 16px;
+    letter-spacing: 1px;
+}
+ 
+/* ===== SECTION TITLE ===== */
+.what {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a2340;
+    margin: 40px 0 24px;
+    background-color: #f0f2f5;
+}
+ 
+/* ===== CARDS GRID ===== */
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 0 48px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #f0f2f5;
+}
+ 
+/* ===== INDIVIDUAL CARDS ===== */
+.clo, .stat, .jewel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+ 
+.clo p, .stat p, .jewel p {
+    position: static;
+    color: #1a2340;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    text-shadow: none;
+    text-align: center;
+    width: 100%;
+}
+ 
+.clo img, .stat img, .jewel img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    border: none;
+    opacity: 1;
+    display: block;
+    position: static;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+ 
+/* ===== BUTTON WRAPPERS ===== */
+.clothes, .stationary, .jewellery {
+    position: static;
+    transform: none;
+    width: 100%;
+}
+ 
+/* ===== SHOW MORE BUTTONS ===== */
+.clothes button, .stationary button, .jewellery button {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #ffffff;
+    color: #1a2340;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease;
+}
+ 
+.clothes button:hover, .stationary button:hover, .jewellery button:hover {
+    background-color: #ececec;
+}
+ 
+/* ===== FOOTER ===== */
+footer {
+    background: linear-gradient(135deg, #3a4a5c, #2c3e50, #4a5568);
+    color: #dde3ea;
+    text-align: center;
+    padding: 40px 48px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+ 
+footer p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+ 
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+ 
+footer a:hover {
+    text-decoration: underline;
+    color: #dde3ea;
+}
+ 
+/* ===== STATIONARY PAGE ===== */
+ 
+.para {
+    background: linear-gradient(135deg, #3a4a5c, #2c3e50, #4a5568);
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 50px 20px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+ 
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding: 40px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+ 
+.statitem1, .statitem2, .statitem3,
+.statitem4, .statitem5 {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+ 
+.statitem1 img, .statitem2 img, .statitem3 img,
+.statitem4 img, .statitem5 img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+ 
+.statitem1 p:nth-child(2), .statitem2 p:nth-child(2),
+.statitem3 p:nth-child(2), .statitem4 p:nth-child(2),
+.statitem5 p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    padding: 20px 20px 0;
+}
+ 
+.statitem1 p:nth-child(3), .statitem2 p:nth-child(3),
+.statitem3 p:nth-child(3), .statitem4 p:nth-child(3),
+.statitem5 p:nth-child(3) {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a2340;
+    padding: 8px 20px 0;
+}
+ 
+.statitem1 p:nth-child(4), .statitem2 p:nth-child(4),
+.statitem3 p:nth-child(4), .statitem4 p:nth-child(4),
+.statitem5 p:nth-child(4) {
+    font-size: 0.85rem;
+    color: #888;
+    padding: 6px 20px 16px;
+}
+ 
+/* ===== JEWELLERY PAGE ===== */
+ 
+.wear {
+    background: linear-gradient(135deg, #3a4a5c, #2c3e50, #4a5568);
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 50px 20px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+ 
+.jewel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding: 40px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+ 
+.jewelitem1, .jewelitem2, .jewelitem3,
+.jewelitem4, .jewelitem5 {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+ 
+.jewelitem1 img, .jewelitem2 img, .jewelitem3 img,
+.jewelitem4 img, .jewelitem5 img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+ 
+.jewelitem1 p:nth-child(2), .jewelitem2 p:nth-child(2),
+.jewelitem3 p:nth-child(2), .jewelitem4 p:nth-child(2),
+.jewelitem5 p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    padding: 20px 20px 0;
+}
+ 
+.jewelitem1 p:nth-child(3), .jewelitem2 p:nth-child(3),
+.jewelitem3 p:nth-child(3), .jewelitem4 p:nth-child(3),
+.jewelitem5 p:nth-child(3) {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a2340;
+    padding: 8px 20px 0;
+}
+ 
+.jewelitem1 p:nth-child(4), .jewelitem2 p:nth-child(4),
+.jewelitem3 p:nth-child(4), .jewelitem4 p:nth-child(4),
+.jewelitem5 p:nth-child(4) {
+    font-size: 0.85rem;
+    color: #888;
+    padding: 6px 20px 16px;
+}
+ 
+/* ===== ADD TO CART BUTTON ===== */
+.cart {
+    width: calc(100% - 40px);
+    margin: 0 20px 12px;
+    padding: 14px 0;
+    background-color: #1a2340;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+ 
+.cart:hover {
+    opacity: 0.85;
+}
+ 
+/* ===== REMOVE BUTTON ===== */
+.remove {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    padding: 14px 0;
+    background-color: #ffffff;
+    color: #1a2340;
+    border: 2px solid #1a2340;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-transform: capitalize;
+}
+ 
+.remove:hover {
+    background-color: #f0f2f5;
+}
+ 
+/* ===== ELECTRONICS PAGE ===== */
+ 
+.enter {
+    background: linear-gradient(135deg, #3a4a5c, #2c3e50, #4a5568);
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 50px 20px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+ 
+.elec-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding: 40px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+ 
+.elecitem1, .elecitem2, .elecitem3,
+.elecitem4, .elecitem5 {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+ 
+.elecitem1 img, .elecitem2 img, .elecitem3 img,
+.elecitem4 img, .elecitem5 img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+ 
+.elecitem1 p:nth-child(2), .elecitem2 p:nth-child(2),
+.elecitem3 p:nth-child(2), .elecitem4 p:nth-child(2),
+.elecitem5 p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    padding: 20px 20px 0;
+}
+ 
+.elecitem1 p:nth-child(3), .elecitem2 p:nth-child(3),
+.elecitem3 p:nth-child(3), .elecitem4 p:nth-child(3),
+.elecitem5 p:nth-child(3) {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a2340;
+    padding: 8px 20px 0;
+}
+ 
+.elecitem1 p:nth-child(4), .elecitem2 p:nth-child(4),
+.elecitem3 p:nth-child(4), .elecitem4 p:nth-child(4),
+.elecitem5 p:nth-child(4) {
+    font-size: 0.85rem;
+    color: #888;
+    padding: 6px 20px 16px;
+}
+
+/* ===== RESPONSIVENESS ===== */
+ 
+/* Tablet - 2 columns */
+@media (max-width: 1024px) {
+    .section {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 32px 40px;
+    }
+ 
+    .stat-grid, .jewel-grid, .elec-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 32px;
+    }
+ 
+    .main {
+        font-size: 3.5rem;
+    }
+ 
+    .what {
+        font-size: 1.5rem;
+    }
+}
+ 
+/* Mobile - 1 column */
+@media (max-width: 600px) {
+    .on_main {
+        padding: 40px 16px 30px;
+    }
+ 
+    .main {
+        font-size: 2.8rem;
+    }
+ 
+    .belowheader {
+        font-size: 0.95rem;
+    }
+ 
+    .what {
+        font-size: 1.3rem;
+        margin: 24px 0 16px;
+    }
+ 
+    .section {
+        grid-template-columns: 1fr;
+        padding: 0 16px 32px;
+        gap: 20px;
+    }
+ 
+    .stat-grid, .jewel-grid, .elec-grid {
+        grid-template-columns: 1fr;
+        padding: 20px 16px;
+        gap: 20px;
+    }
+ 
+    .para, .wear, .enter {
+        font-size: 1.6rem;
+        padding: 32px 16px;
+    }
+ 
+    .statitem1 p:nth-child(3), .statitem2 p:nth-child(3),
+    .statitem3 p:nth-child(3), .statitem4 p:nth-child(3),
+    .statitem5 p:nth-child(3),
+    .jewelitem1 p:nth-child(3), .jewelitem2 p:nth-child(3),
+    .jewelitem3 p:nth-child(3), .jewelitem4 p:nth-child(3),
+    .jewelitem5 p:nth-child(3),
+    .elecitem1 p:nth-child(3), .elecitem2 p:nth-child(3),
+    .elecitem3 p:nth-child(3), .elecitem4 p:nth-child(3),
+    .elecitem5 p:nth-child(3) {
+        font-size: 1.3rem;
+    }
+ 
+    .cart, .remove {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+ 
+    footer {
+        padding: 32px 16px;
+    }
+ 
+    footer a {
+        display: inline-block;
+        margin: 4px 8px;
+    }
+}
+ 
