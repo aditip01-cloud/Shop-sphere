@@ -1,10 +1,11 @@
-Shopsphere 
+# Shopsphere
+
 A beautifully designed shopping website built with pure HTML, CSS and JavaScript.
-Live Demo
-🔗  https://aditip01-cloud.github.io/Shop-sphere/
 
-Tech Stack
+## Live Demo
+🔗 https://aditip01-cloud.github.io/Shop-sphere/
 
-HTML5
-CSS3
-JavaScript
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript
